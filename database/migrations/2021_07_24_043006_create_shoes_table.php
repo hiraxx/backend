@@ -18,8 +18,8 @@ class CreateShoesTable extends Migration
             $table->string('name');
             $table->string('brand');
             $table->integer('size');
-            $table->integer('price');
-            $table->date("acquired_on");
+            $table->decimal('price',12,2);
+            $table->date('acquired_on');
             $table->timestamps();
         });
     }
