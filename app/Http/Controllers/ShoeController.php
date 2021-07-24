@@ -56,7 +56,7 @@ class ShoeController extends Controller
     }
 
     public function index() {
-        $shoes = Shoe::orderBy('title')->get();
+        $shoes = Shoe::orderBy('name')->get();
         return response()->json($shoes, 200);
     }
 }
